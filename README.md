@@ -1,5 +1,5 @@
 # LSSD: Luminescence Sensitivity Statistics and Data
-<img src="aux/icon.jpg" width="120" height="120">
+<img src="aux/icon.jpg" width="200" height="200">
 
 A scientific and open Python package for data analysis in luminescence sediment provenance. 
 This is a initial version (0.1.1) builded to improve the data analysis of my roomate PhD.
@@ -10,7 +10,17 @@ This code is built with Matplotlib, Pandas and Numpy.
 
 # Basic usage
 LumiData is the main object of this module. This object stores the ```.binx``` tabular data and the signal readings. The tabular data is stored as Pandas Dataframe and can be called by "maindataframe". Signal data is stored as a dictionary which the key is the "id" column of the process. Each register has two list inside a list: ```[[time/temperature],[counts]]```.
- 
+
+## Install
+Run these lines on the module directory:
+```bash
+git clone https://github.com/geojobueno/lssd.git
+cd lssd/
+python setup.py build
+python setup.py install
+```
+It will install the dependencies when necessary.
+
 ## Basic examples
 Import and integrating signal:
 
